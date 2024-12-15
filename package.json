@@ -1,0 +1,14 @@
+{
+  "homepage": "https://parsa3323.github.io/docs",
+  "name": "docs",
+  "devDependencies": {
+    "vitepress": "^1.5.0"
+  },
+  "scripts": {
+    "docs:dev": "vitepress dev docs",
+    "predeploy": "npm run docs:build",
+    "deploy": "gh-pages -d dist",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs"
+  }
+}
